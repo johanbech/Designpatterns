@@ -14,10 +14,10 @@ namespace Memento
         //    this.state = "Inital state";
         //}
 
-        public int State
+        public string State
         {
-            get { return State; }
-            set { State = value; Console.WriteLine($"Current State : {state}"); }
+            get { return state; }
+            set { state = value; Console.WriteLine($"Current State : {state}"); }
         }
 
         public Memento GetMemento()
@@ -27,6 +27,12 @@ namespace Memento
             return mymem;
         }
 
+        public void RevertToState(Memento previousMenmento)
+        {
+            Console.WriteLine("Restoring to previous State...");
+            this.state = previousMenmento.State;
+            Console.WriteLine($"Current State {state}");
+        }
         
 
     }

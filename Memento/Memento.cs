@@ -12,8 +12,8 @@ namespace Memento
 
         public string State
         {
-            get { return State; }
-            set { State = value; }
+            get { return state; }
+            set { state = value; }
         }
 
     }
