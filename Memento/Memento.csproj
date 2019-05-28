@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71C3171C-BB51-4BD2-9B7A-7EC5F3953532}</ProjectGuid>
+    <ProjectGuid>{646466FF-851D-4F1F-8732-6E4358C4FCF5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DecoratorPattern</RootNamespace>
-    <AssemblyName>DecoratorPattern</AssemblyName>
+    <RootNamespace>Memento</RootNamespace>
+    <AssemblyName>Memento</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,11 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractDecorator.cs" />
-    <Compile Include="Component.cs" />
-    <Compile Include="ConcreteComponent.cs" />
-    <Compile Include="ConcreteDecoratorEx1.cs" />
-    <Compile Include="ConcreteDecoratorEx2.cs" />
+    <Compile Include="Memento.cs" />
+    <Compile Include="Originator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
